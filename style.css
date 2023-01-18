@@ -1,8 +1,39 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
   }
-  
+  body h1{
+    font-size: 55px;
+    margin: 10px;
+  }
+  body h2{
+    font-size: 45px;
+    margin: 30px 0 0;
+  }
+  .container-info{
+    display: flex;
+    margin: 50px auto;
+    height: 300px;
+    width: 90%;
+  }
+
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    height: 100px;
+    border-radius: 2rem;
+    width: 17%;
+    margin: 15px auto;
+    font-weight: 700;
+  }
+
+  #search{
+    display: block;
+    margin: 15px;
+  }
   #city-form {
     margin: 0 auto;
     width: 300px;
@@ -12,11 +43,84 @@ body {
     padding: 5px;
     font-size: 16px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid black;
     margin-bottom: 10px;
   }
+
+  .btn{
+    border-radius: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1);
+    transition: transform .4s;
+  }
+  .btn:hover{
+    transform:scale(1.1);
+  }
+
+
+  /*********************************** DARK MODE *****************************************/
+  .citysearch {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .citysearch #containerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 220px;
+    height: 40px;
+  }
+  .citysearch #containerBtn #darkmode {
+    font-size: 1.2em;
+  }
+  .citysearch #containerBtn .dark {
+    cursor: pointer;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    z-index: 999999;
+    width: 60px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 100px;
+  }
+  .citysearch #containerBtn .dark > #darkBtn {
+    cursor: pointer;
+    border: none;
+    margin: 2px;
+    width: 31px;
+    height: 31px;
+    background-color: #dadada;
+    border-radius: 100px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .citysearch > .container {
+    width: 100%;
+    margin: auto;
+  }
   
-  #weather-data {
-    font-size: 18px;
-    margin-top: 20px;
+  .darkBody {
+  background-color: #333;
+  cursor: default;
+  color: white;
+  }
+  .darkBody .darkBtn {
+  transform: translateX(25px);
+  background-color: black;
+  border: none;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  }
+
+  .darkBody .btn{
+    color: white;
+    border: 2px solid white;
   }

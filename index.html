@@ -5,19 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Météo</title>
 </head>
 <body>
   
 </body>
 </html>
   <body>
+    <!--Dark Mode-->
+    <section class="citysearch" id="citysearch">
+      <!-- Dark mode button -->
+      <div id="containerBtn">
+        <p id="darkmode">Thème sombre</p>
+        <div class="dark" id="dark">
+          <button id="darkBtn" class="darkBtn"></button>
+        </div>
+      </div>
+    <h1>Météo</h1>
     <form id="city-form">
-      <label for="city-input">Entrez le nom de votre ville :</label>
+      <label for="city-input" id="searchbar">Entrez le nom de votre ville :</label>
       <input id="city-input" type="text">
-      <button type="submit">Rechercher</button>
+      <button class="btn" id="btn" type="submit">Rechercher</button>
     </form>
-    <div id="weather-data"></div>
+    </section>
+
+    <h2 id="title-city">---</h2>
+    <div class="container-info">
+      <div class="box box1" id="description"></div>
+      <div class="box box2" id="temp"></div>
+      <div class="box box3" id="wind"></div>
+      <div class="box box4" id="humidity"></div>
+      <div class="box box5" id="pressure"></div>
+    </div>
     <script src="script.js"></script>
+    <script src="dark.js"></script>
   </body>
 </html>
