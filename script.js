@@ -22,7 +22,7 @@ const meteo = fetch(`https://api.openweathermap.org/data/2.5/weather?q=Bordeaux&
 .then((data) => {
     cityTitle.innerHTML = data.name;
     description.innerHTML = "description : " + data.weather[0].description;
-    temperature.innerHTML = "température : " + data.main.temp;
+    temperature.innerHTML = "température : " + data.main.temp + " °C";
     vent.innerHTML = "vent : " + data.wind.speed + ' km/h';
     humidite.innerHTML = "humidité : " + data.main.humidity + ' %';
     pressure.innerHTML = " pression atmosphérique :" + data.main.pressure + " hPa";
