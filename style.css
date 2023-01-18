@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #city-form {
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  #city-input {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  #weather-data {
+    font-size: 18px;
+    margin-top: 20px;
+  }
